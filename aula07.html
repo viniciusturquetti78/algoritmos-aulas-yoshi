@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiro programa em Javascript</title>
+</head>
+
+<body>
+    <h2>HTML com Javascript</h2>
+
+    Informe seu nome: <input id="seu_nome"> <br> Informe sua idade: <input id="idade"> <br>
+    <button onclick="contar()">Conte-me algo</button>
+
+</body>
+
+</html>
+<script>
+    function contar() {
+        var seu_nome1 = seu_nome.value; //variavel 1 que depois é definida com "$"
+        var idade1 = idade.value; //variavel 2 que depois é definida "$"
+
+        alert('olá, o programa está iniciando.... Just a Moment!');
+        alert(`Você se chama ${seu_nome1} e tem ${idade1} anos`);
+
+        //técnica de concatenação
+        // alest('voce se chama '+seu_nome+' e tem '+idade1+'anos (segunda vez))
+    }
+</script>
