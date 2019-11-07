@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<!---
+custo da lulu: 1000
+quanto tempo macho: 2
+"   " femea: 30
+
+
+lulu macho: 2000
+CUSTO: 2OO
+saldo M: 2000 - (200*2)
+1.800
+
+custo: 30*1000 = 30000
+saldo F: 4000 = 30000 = -26000
+-->
+
+<body>
+    <h2>Continuada 1</h2>
+
+    Custo do Lulu: <input id="custo_lulu"> <br><br>
+    <!----------------------------------------------->
+    custo do yorkshire: <input id="custo_york"> <br><br>
+    <!--------------------------------------------------------------->
+    <!--------------------------------------------------------------->
+    Meses para vender o lulu macho:
+
+    <input type="text" id="meses_lulu_macho"><br><br>
+    <!--------------------------------------------------------------->
+    Meses para vender o lulu macho:
+
+    <input type="text" id="meses_lulu_femea"><br><br>
+    <!--------------------------------------------------------------->
+    Meses para vender o york macho:
+
+    <input type="text" id="meses_york_macho"><br><br>
+    <!--------------------------------------------------------------->
+    Meses para vender o york femea:
+
+    <input type="text" id="meses_york_femea"><br><br>
+    <!--------------------------------------------------------------->
+    <button onclick="simular()"> Simular perda ou ganho</button><br>
+    <div id="div_resultado">
+        <ul>
+            <li>
+                Após <b id="ver_meses_lulu_macho">A meses</b>, voce gastou <u id="ver_custo_lulu_macho">R$</u>B com o
+                <b style="color:blue">Lulu macho</b>, vendeu por <u id="ver_venda_lulu_macho">R$C</u>, tendo um saldo de <u id="ver_saldo_lulu_macho">R$0</u>
+            </li>
+            <li>
+                Após <b id="ver_meses_lulu_femea">A meses</b>, voce gastou <u id="ver_custo_lulu_femea">R$</u>B com o
+                <b style="color:blueviolet">Lulu femea</b>, vendeu por <u id="ver_venda_lulu_femea">R$C</u>, tendo um saldo de <u id="ver_saldo_lulu_femea">R$0</u>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
+<script>
+    function simular() {
+        var custo_lulu_macho = custo_lulu.value * meses_lulu_macho.value;
+
+        //conversão opcional (porém recomendada) para números
+        var custo_lulu_femea = number(custo_lulu.value) * number(meses_lulu_femea.value);
+
+        var custo_york_macho = number(custo_york.value) * number(meses_york_macho.value);
+        var custo_york_femea = number(custo_york.value) * number(meses_york_femea.value);
+
+        //calculando os saldos dos 4 cachorros
+        var custo_
+
+
+    }
+</script>

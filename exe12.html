@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="IOS-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    Quantos minutos cada torneira fica pingando?<br><br> Torneira 1: <input type="text" id="torneira1"><br> Torneira 2: <input type="text" id="torneira2"><br> Torneira 3: <input type="<br>>" id="torneira3">
+    <button onclick="litros()">calcular</button>
+
+</body>
+
+</html>
+<script>
+    function litros() {
+        var gasto = (torneira1.value * 15) + (torneira2.value * 15) + (torneira3.value * 15);
+        alert(`Suas 3 torneiras, juntas, desperdiçaram ${gasto} litros de água`)
+    }
+</script>

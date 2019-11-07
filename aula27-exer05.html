@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<!--     3. Usando operador ternário, refaça a questão 6 da Lista 5.
+
+
+
+4. Usando operador ternário, refaça a questão 8 da Lista 5.
+
+
+
+5. Usando operador ternário, refaça uma questão da Lista 5 ou 6 que você escolher.
+
+
+6. Usando operador ternário, refaça a questão 2 da Lista 5.
+
+
+7. Usando operador ternário, refaça a questão 3 da Lista 5. Não precisa fazer a parte das cores diferentes por frase.
+
+
+8. Usando operador ternário, refaça a questão 10 da Lista 5.
+
+9. Crie um programa em HTML/JS o qual:
+a) Pergunte ao usuário qual sua meta de economia
+b) Pergunte ao usuário quanto tem guardado
+c) Ao clicar em "Analisar economia"...
+d) Caso a meta tenha sido alcançada ou ultrapassada, exibir, abaixo do botão, 
+a frase Parabéns, meta alcançada!. Caso a meta tenha sido ultrapassada, exibir 
+também a frase Meta ultrapassada em X (onde X é a diferença entre a economia e a meta)
+e) Caso a meta ainda não tenha sido alcançada, exibir, abaixo do botão, a frase Força!
+ Ainda em busca da meta! Falta X (onde X é a diferença entre a meta e a economia)
+ 
+     Exercício 9
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Insira a sua meta de economia: <input id="querer"> <br>
+    Insira quanto tem guardado: <input id="guardado"> <br>
+
+    <button onclick="analisar()">Analisar economia</button>
+
+    <div id="divi"></div>
+</body>
+</html>
+<script>
+    function analisar() {
+        var meta = Number(querer.value);
+        var economia = Number(guardado.value);
+
+        if(economia == meta){
+            divi.innerHTML = `<b>Parabéns, meta alcançada!</b>`;
+        } 
+        if(economia > meta) {
+            divi.innerHTML += `<div><b>Meta ultrapassada em ${(economia - meta).toFixed(2)}</b></div>`;
+        } 
+        if(economia < meta){
+            divi.innerHTML = `<b>Força! Ainda em busca da meta! Falta R$${(meta - economia).toFixed(2)}</b>`;
+        }
+
+    }
+</script>
+
+
+-->
+<body>
+    qual é sua meta? <input type="text" id="meta">
+    quanto tem guardado <input type="text" id="guardado">
+
+    <button onclick="analisar()">analisar</button>
+
+    <div id="div_mensagem"></div>
+</body>
+</html>
+<script>
+    function analisar(){
+        div_mensagem.innerHTML = ""
+        var meta_v = Number(meta.value);
+        var eco = Number(guardado.value)
+
+        var mensagem = eco == meta_v ? "Parabéns, meta alcançada!": eco > meta_v? "Meta ultrapassada" : "Força! Ainda em busca da meta!"
+
+        div_mensagem.innerHTML = mensagem;
+    }
+
+</script>

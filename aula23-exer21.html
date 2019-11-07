@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    insira a quantidade de passagens: <input type="text" id="passagens">
+    <button onclick="comprar()"> Comprar</button>
+    <div>
+        <b id="pagar"></b>
+    </div>
+</body>
+
+</html>
+<script>
+    function comprar() {
+        var valor_pass = Number(passagens.value);
+        var pass = valor_pass * 4.00;
+        if (valor_pass >= 8 && valor_pass <= 50) {
+            if (valor_pass <= 19) {
+                pagar.innerHTML = `Total a pagar: R$ ${(pass -= (pass *= 0.03)).toFixed(2)}`;
+            }
+            if (valor_pass >= 20 && valor_pass <= 49) {
+                pagar.innerHTML = `Total a pagar: R$ ${(pass -= (pass *= 0.05)).toFixed(2)}`;
+            }
+            if (valor_pass >= 50) {
+                pagar.innerHTML = `Total a pagar: R$ ${(pass -= (pass *= 0.07)).toFixed(2)}`;
+            }
+        } else {
+            alert(`quantidade inválida`);
+        }
+    }
+</script>

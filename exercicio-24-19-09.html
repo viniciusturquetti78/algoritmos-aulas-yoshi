@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    digite seu salário: <input id="salario">
+    <!---------------------------------------->
+    <select id="descontos">
+        <option value="* 0.05">INSS</option>
+        <option value="* 0.2">IR</option>
+        <option value="* 0.15">VT</option>
+
+    </select>
+    <button onclick="ver_desconto()">ver desconto</button>
+</body>
+<div id="div_mensagem" style="display: none">
+    o desconto é: <span id="conta"></span>
+</div>
+
+</html>
+<script>
+    function ver_salario() {
+        var descontoT = Number(salario.value) * Number(desconto.value);
+        alert(` o desconto $: ${conta.toFixed(2)}`);
+        div_mensagem.style = 'block';
+    }
+</script>

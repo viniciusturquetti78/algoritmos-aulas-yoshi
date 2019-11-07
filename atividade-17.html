@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<!-- 17 (fácil). Crie uma página HTML com código JS na qual:
+
+a) O usuário informa seu bairro e o número de cachorros que tem
+b) Ao clicar num botão "Análise Pet" exiba um texto abaixo dele, em cor de tom vermelho uma frase como esta: "Você mora em X e tem Y cachorros" 
+-->
+
+<body>
+
+    que bairro vc mora: <input type="text" id="bairro"> quantos cachorros tem: <input type="text" id="cachorro">
+    <button onclick="cachorros()">cachorrar?</button>
+
+    <div id="div_mensagem" style="color:red">
+        <ul style="color: red" id="ul_bairro"></ul>
+        <ul style="color: red" id="ul_cachorro"></ul>
+    </div>
+
+</body>
+
+</html>
+<script>
+    function cachorros() {
+        ul_bairro.innerHTML = `voce mora em ${bairro.value}`
+        ul_cachorro.innerHTML = `e tem ${cachorro.value} cachorros`;
+
+    }
+</script>

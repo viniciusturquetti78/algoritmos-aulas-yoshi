@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Estrutura de repetição (while)</h2>
+
+    <button onclick="repetir_alert()">repetir alerts</button>
+
+    <button onclick="repetir_html()">repetir alerts</button>
+
+    <button onclick="repetir_imagem()">repetir imagem</button>
+
+    <div id="div_frases"></div>
+    <div id="div_imagens"></div>
+    <div style=" float: left; position:relative" id="repetir"></div>
+</body>
+
+</html>
+<script>
+    function repetir_alert() {
+        var contador = 0;
+
+        while (contador < 10) {
+            alert('algoritmos é vida!');
+            contador++;
+        }
+    }
+
+    function repetir_imagem() {
+        var contador = 0;
+
+        while (contador < 10) {
+            div_imagens.innerHTML += '<img src="ric-vic.gif"> ';
+            contador++;
+        }
+
+        while (contador < 10) {
+            div_repetir.innerHTML += '<img src="ric-vic.gif"> ';
+            contador++;
+        }
+    }
+</script>

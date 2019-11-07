@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    lista de produtos:
+    <select id="mercado">
+        <option> - produtos -</option>
+        <option value="5,00"> garra pet</option>
+        <option value="7,00"> caderno </option>
+        <option value="1,00"> lapis</option>
+        <option value="1.000.000"> boing 1000-90</option>
+
+        
+
+    </select>
+    <button onclick="ver_valor()">ver valor real</button>
+</body>
+
+</html>
+<script>
+    function ver_valor() {
+        alert(`isso custa R$${mercado.value}`);
+    }
+</script>

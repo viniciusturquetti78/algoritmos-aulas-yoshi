@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <select name="" id="dia">
+        <option value="onibus">ônibus</option>
+        <option value="metro">metro</option>
+        <option value="carro">carro</option>
+        <option value="bicicleta">Bicicleta</option>
+        <option value="lotação">Lotação</option>
+    </select>
+    <button onclick="calcular()">Calcular cansaço</button>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var can = dia.value;
+
+        if (can == "carro" || can == "bicicleta") {
+            alert(`Tá tranquilo ...`)
+        }
+        if (can == "metro") {
+            alert(`Um pouco cansado`);
+        }
+        if (can == "onibus" || can == "lotação") {
+            alert(`Vish ... vive cansado`);
+        }
+    }
+</script>

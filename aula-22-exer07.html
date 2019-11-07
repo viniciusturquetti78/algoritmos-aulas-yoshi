@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    informe sua 1° nota: <input type="text" id="nota1">
+    <br> informe sua 2° nota: <input type="text" id="nota2">
+    <br>
+    <button onclick="media()">aprovação</button>
+</body>
+
+</html>
+<script>
+    function media() {
+        var valor_media = Number(nota1.value) + Number(nota2.value) / 2;
+
+        if (valor_media >= 5) {
+            alert(` sua nota é ${valor_media} Parabéns, aprovado!`)
+        } else {
+            alert(` sua nota é ${valor_media} Tente outra vez...`)
+        }
+
+    }
+</script>

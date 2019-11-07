@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        qual é o vaor da passagem <input id="passagem"><br> quantas viagens você fará por mês?<input id="viagens">
+        <button onclick="contar()">Ver economia</button>
+    </div>
+</body>
+
+</html>
+<script>
+    function contar() {
+        var conta = (passagem.value * viagens.value) / 2;
+
+        alert(`você economizará R$ ${conta} por mês `);
+
+    }
+</script>

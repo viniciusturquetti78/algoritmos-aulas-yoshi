@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    qual é a temperatura atual: <input type="text" id="temp">
+    <!------------------------------------------------------>
+    <button onclick="clima()">Analisar clima</button>
+</body>
+
+</html>
+<script>
+    function clima() {
+        var valor_temp = Number(temp.value);
+
+        if (valor_temp < 21 || valor_temp > 24) {
+            alert(`alerta de desconforto`);
+        }
+        if (valor_temp < 21) {
+            alert(`As pessoas vão ter hipotermina`);
+        }
+        if (valor_temp > 24) {
+            alert(`As pessoas vão derreter`);
+        }
+    }
+</script>

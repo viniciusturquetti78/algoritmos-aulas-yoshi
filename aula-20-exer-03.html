@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lista 5 - q03</title>
+</head>
+
+<body>
+    saldo da sua conta no banco: <input type="text" id="saldo">
+    <br>
+    <button onclick="financas()">verificar finanças</button>
+    <div id="div_mensagem" style="display:none">
+        <span id="resultado" style="color:black"></span>
+    </div>
+</body>
+
+</html>
+<script>
+    function financas() {
+        var valor_saldo = Number(saldo.value);
+
+        if (valor_saldo == 0) {
+            resultado.innerHTML = `conta zerada`
+        }
+        div_mensagem.style.display = 'block';
+        //---------------------------------------
+        if (valor_saldo < 0) {
+            resultado.innerHTML = `esta devendo`
+            resultado.style.color = 'red';
+        }
+        div_mensagem.style.display = 'block';
+        //---------------------------------------
+        if (valor_saldo < -1000) {
+            resultado.innerHTML = `esta igual ao corinthians: no serasa`
+            resultado.style.color = 'darkred';
+        }
+        div_mensagem.style.display = 'block';
+        //--------------------------------------
+        if (valor_saldo > 0) {
+            resultado.innerHTML = `Saldo positivo`
+            resultado.style.color = 'blue';
+        }
+        div_mensagem.style.display = 'block';
+    }
+</script>

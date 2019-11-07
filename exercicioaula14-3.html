@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>emoções</title>
+</head>
+
+<body>
+    <button onclick="feliz()">feliz</button>
+    <button onclick="neutro()">neutro</button>
+    <button onclick="triste()">triste</button>
+    <button onclick="pistola()">pistola</button>
+
+    <!-------------------------------------------->
+    <div id="div_mensagem" style="display:none">
+        <img src="interrogacao.png" alt="" id="foto" style="height: 300px">
+    </div>
+</body>
+
+</html>
+<script>
+    function feliz() {
+        foto.src = 'feliz.jpg'
+        div_mensagem.style.display = 'block';
+
+    }
+
+    function neutro() {
+        foto.src = 'neutro.png'
+        div_mensagem.style.display = 'block';
+
+    }
+
+    function triste() {
+        foto.src = 'triste.png'
+        div_mensagem.style.display = 'block';
+
+    }
+
+    function pistola() {
+        foto.src = 'pistola.jpg'
+        div_mensagem.style.display = 'block';
+
+    }
+</script>

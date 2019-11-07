@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exercicio 25</title>
+</head>
+
+<body>
+    <img src="ricardo.jpg" alt="" id="foto" style="height: 225px;">
+    <select name="" id="dimensao">
+        <option value="+0px">normal</option>
+        <option value="50">grande</option>
+        <option value="300">enorme</option>
+        <option value="-50">pequno</option>
+        <option value="-100">minusculo</option>
+
+    </select>
+    <button onclick="redimencionar()">ver dimensão</button>
+</body>
+
+</html>
+<script>
+    var tamanho_original = foto.style.height;
+
+    function redimencionar() {
+        tamanho_original += dimensao.value;
+        foto.style.height = tamanho_origunal;
+
+    }
+    var altura = 225 + Number(dimensao.value);
+    ricardo, style.height = `$altura}px`
+</script>

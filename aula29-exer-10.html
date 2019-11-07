@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="ver()">Curto 3 e 5!</button>
+    <div id="divi"></div>
+</body>
+</html>
+<script>
+    function ver() {
+        for(var contador = 0; contador <= 100 ; contador++){
+
+            if(contador % 3 == 0 && contador % 5 == 0){
+                divi.innerHTML += `É TRI!É PENTA!<br> `;
+            }else if(contador % 3 == 0){
+                divi.innerHTML += 'É TRI! <br>';
+            }else if(contador % 5 == 0){
+                divi.innerHTML += 'É PENTA! <br>'
+            }else{
+            divi.innerHTML += `${contador} <br>`;
+            }
+        }
+    }
+</script>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <select id="estrelas">
+        <option value="1">1 estrela</option>
+        <option value="2">2 estrelas</option>
+        <option value="3">3 estrelas</option>
+        <option value="4">4 estrelas</option>
+        <option value="5">5 estrelas</option>
+    </select>
+    <button onclick="votar()">votar</button>
+</body>
+
+</html>
+<script>
+    var soma = 0;
+    var votos = 0;
+
+    function votar() {
+        votos++;
+        soma += Number(estrelas.value)
+        var media = soma / votos;
+
+        v_media.innerHTML = media.toFixed(2);
+        v_avaliacoes.innerHTML = votos;
+    }
+
+    function votar() {
+        soma += Number(estrelas.value)
+        var media = soma / votos;
+
+        v_media.innerHTML = media.toFixed(2);
+        v_avaliacoes.innerHTML = votos;
+    }
+</script>

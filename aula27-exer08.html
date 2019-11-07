@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- 8. Usando operador ternário, refaça a questão 10 da Lista 5.
+      Valor guardado: R$<b id="valor">0.00</b>
+    <div id="divi"></div>
+    <br>
+    <button onclick="guardar()">Guardar R$5,00</button>
+    <button onclick="gastar()">Gastar R$10,00</button>
+
+</body>
+</html>
+
+<script>
+    var cofrin = 0;
+    
+    function guardar() {
+        cofrin += 5;
+        valor.innerHTML = cofrin;
+
+        if(cofrin > 0){
+            divi.innerHTML = `<div style: color: blue;>Finanças OK!</div>`;
+         
+            if(cofrin >= 100){
+                divi.innerHTML += `<div><b>#ostentacão</b></div>`;
+                
+            }
+        }
+    }     
+    
+    function gastar() {
+        cofrin -= 10;
+        valor.innerHTML = cofrin;
+        
+        if(cofrin <0){
+            divi.innerHTML = `<div style: color: red;>Finanças em perigo!</div>`;
+        
+            if(cofrin < -20){
+                divi.innerHTML += `<div>Quase um Corinthians!</div>`;
+            }
+        }
+    }
+
+</script>
+    
+    -->
+</head>
+<body>
+        Valor guardado: R$<b id="valor">0.00</b>
+        <div id="divi"></div>
+        <br>
+        <button onclick="guardar()">Guardar R$5,00</button>
+        <button onclick="gastar()">Gastar R$10,00</button>
+    
+</body>
+</html>
+<script>
+cofrin = 0;
+function guardar(){
+    cofrin += 5;
+    valor.innerHTML = cofrin;
+    var mensagem = cofrin > 0 ? "finanças ok" : cofrin >= 100 ? "#ostentação" : "";
+
+    divi.innerHTML = mensagem;
+}
+
+function gastar (){
+    cofrin -=10;
+    valor.innerHTML = cofrin;
+    var mensagem = cofrin < 0 ? "finanças em perigo" : cofrin  < -20 ? "quase um corinthians" : "";
+
+    divi.innerHTML = mensagem;
+}
+</script>

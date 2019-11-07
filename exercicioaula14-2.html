@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>calculadora</title>
+</head>
+
+<body>
+    informe um numero: <input type="text" id="numero1">
+    <!-------------------------------------------------->
+    informe outro numero: <input type="text" id="numero2">
+    <!-------------------------------------------------->
+    <!-------------------------------------------------->
+    <button onclick="somar()">somar</button>
+    <button onclick="subtrair()">subtrair</button>
+    <button onclick="multiplicar()">multiplicar</button>
+    <button onclick="dividir()">dividir</button>
+    <!------------------------------------------------->
+    <div id="div_mensagem" style="display:none">
+        resutado é : <span id="resultado"></span>
+    </div>
+
+</body>
+
+</html>
+<script>
+    function somar() {
+        var adicao = Number(numero1.value) + Number(numero2.value);
+        resultado.innerHTML = `A soma entre ${numero1.value} e ${numero2.value} é ${adicao}`;
+        //-------------------------------------------------------------------------------------------//
+        div_mensagem.style.display = 'block';
+    }
+
+    //===================================================================///
+    function subtrair() {
+        var subtracao = Number(numero1.value) - Number(numero2.value);
+        resultado.innerHTML = `A subtração entre o ${numero1.value} e ${numero2.value} é ${subtracao}`;
+        //-------------------------------------------------------------------------------------------//
+        div_mensagem.style.display = 'block';
+    }
+    //---------------------------------------------------------------------------------------------//
+    function multiplicar() {
+        var multiplicacao = Number(numero1.value) * Number(numero2.value);
+        resultado.innerHTML = `A soma entre ${numero1.value} e ${numero2.value} é ${multiplicacao}`;
+        //-------------------------------------------------------------------------------------------//
+        div_mensagem.style.display = 'block';
+    }
+    //----------------------------------------------------------------------------------------------//
+    function dividir() {
+        var divisao = Number(numero1.value) / Number(numero2.value);
+        resultado.innerHTML = `A soma entre ${numero1.value} e ${numero2.value} é ${divisao}`;
+        //-------------------------------------------------------------------------------------------//
+        div_mensagem.style.display = 'block';
+    }
+</script>

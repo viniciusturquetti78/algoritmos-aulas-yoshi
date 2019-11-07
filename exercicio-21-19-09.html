@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="iso-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<!--21. Existe uma oração muito famosa atribuida a S Francisco de Assis, chamada "Oração pela paz". É aquela que diz "onde houver ódio que eu leve amor, onde houver desespero que eu leve esperança...". Ou seja, tem um sentimento ruim e o bom em seguida. Crie um programa em HTML/JS o qual:
+a) Tenha uma "combo" que mostre pelo menos 3 partes "ruins" que constam na oração
+b) Ao clicar num botão "Fazer oração", exiba um alerta com a parte "boa" correspondente, conforme a oração-->
+
+<body>
+    oracões :
+    <select id="oracao" onchange="ver_oracao">
+        <option> - oracão pela paz -</option>
+        <option value="que eu leve amor">onde houver ódio</option>
+        <option value="que eu leve esperança...">onde houver desespero</option>
+        <option value="Que eu leve o perdão">Onde há ofensa</option>
+    </select>
+    <button oncick="ver_oracao()">ver oração</button>
+</body>
+
+</html>
+<script>
+    function ver_oracao() {
+        alert(`oração pela paz: ${oracao.value}`);
+    }
+</script>

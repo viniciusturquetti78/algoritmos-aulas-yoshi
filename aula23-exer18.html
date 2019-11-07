@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<!------18. Crie um programa em HTML/JS o qual simule um pequeno sistema de login assim:
+a) Pergunte o login do usuário
+b) Pergunte a senha do usuário (curiosidade: se o type do input for "password", você não vê na tela o valor digitado)
+c) Ao clicar em "Entrar"...
+d) Caso o login for "bandtec" e a senha for "digital", exibir um alert com a frase "Usuário autenticado com sucesso", 
+caso contrário, exibir um alert com "Falha na autenticação"-->
+
+<body>
+
+    Login: <input type="text" id="login">
+    <!--------------------------------------->
+    senha: <input type="password" id="senha">
+
+    <button onclick="entrar()">entrar</button>
+
+</body>
+
+</html>
+<script>
+    function entrar() {
+        var lo = (login.value);
+        var se = (senha.value);
+
+        if (lo == bandtec && se == digital) {
+            alert(`usuário autenticado`);
+        } else {
+            alert(`Falha na autenticação`)
+        }
+    }
+</script>

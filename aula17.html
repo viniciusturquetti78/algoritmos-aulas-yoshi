@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>aula 17</title>
+</head>
+
+<body>
+    idade: <input type="text" id="idade"><br>
+    <!----------------------------------------------------->
+    <button onclick="envelhecer()"> envelhecer 1 ano</button>
+    <button onclick="rejuvenescer()"> rejuvenescer 1 ano</button>
+</body>
+
+</html>
+<script>
+    function envelhecer() {
+        var idade_atual = Number(idade.value);
+
+        var nova_idade = ++idade_atual;
+
+        idade.value = nova_idade;
+    }
+
+    function rejuvenescer() {
+        
+        
+
+    }
+</script>

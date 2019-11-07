@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8898-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    quantidade de ingressos de estudantes vendidos<input id="estudantes"><br> ingrssos comuns vendidos<input id="comum"><br> qual é o valor do ingresso comum?<input id="valor_comum"><br>
+    <button onclick="total()">calcular</button>
+
+
+
+</body>
+
+</html>
+<script>
+    function total() {
+        var total1 = (estudantes.value * (valor_comum.value / 2)) + (comum.value * valor_comum.value);
+        alert(`A arrecadação foi de R$ ${total1}`);
+    }
+</script>

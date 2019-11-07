@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estrutura de decisão</title>
+</head>
+
+<body>
+    <h2>Estrutura de decisão</h2>
+
+    valor das multas: <input type="text" id="multas">
+    <br>
+    <button onclick="viajar()">analisar viagem</button>
+
+</body>
+
+</html>
+<script>
+    function viajar() {
+        //para uso em estruturas de decisão
+        //é RECOMENDADO converter os valores da tela em números
+        var valor_multas = Number(multas.value);
+
+        //estrutura de decisão "IF" (SE)
+
+        //SE 'valor_multas' for maior que 0
+        if (valor_multas > 0) {
+            //todas as linhas dentro das chaves dp "if"
+            //serão execultados caso o teste do "if" for VERDADE   
+            alert(`Pagou multa de R$${valor_multas}`);
+        }
+        //esta linha é comum, fora do "if", sempre será executada 
+        alert('viajar é muito bom!!');
+    }
+</script>

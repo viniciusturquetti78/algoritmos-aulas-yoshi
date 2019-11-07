@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    quantas cria tu tem: <input type="text" id="cria">
+    <br>
+    <button onclick="familia()">Analisar família</button>
+
+    <div id="div_tv" style="display:none">
+        <span id="resu"></span>
+    </div>
+    <div id="div_internet" style="display:none">
+        <span id="resul"></span>
+    </div>
+    <div id="div_game" style="display:none">
+        <span id="result"></span>
+    </div>
+    <div id="div_netflix" style="display:none">
+        <span id="resultado"></span>
+    </div>
+</body>
+
+</html>
+<script>
+    function familia() {
+        var valor_familia = Number(cria.value);
+
+        if (valor_familia >= 1) {
+            resu.innerHTML = `<div>não tem TV</div>`
+            div_tv.style.display = 'block';
+        }
+        //-------------------------------------------------------
+        if (valor_familia >= 2) {
+            resul.innerHTML = `<div> não tem INTERNET HAHA</div>`
+            div_internet.style.display = 'block'
+        }
+        //-------------------------------------------------------
+        if (valor_familia >= 3) {
+            result.innerHTML = `<div>não tem VIDEO GAME HAHA</div>`
+            div_game.style.display = 'block'
+        }
+        //-------------------------------------------------------
+        if (valor_familia >= 4) {
+            resultado.innerHTML = `<div>não tem INTERNET HAHA</div>`
+            div_netflix.style.display = 'block'
+        }
+    }
+</script>

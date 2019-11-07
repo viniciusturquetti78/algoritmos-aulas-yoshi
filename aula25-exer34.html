@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    diga qualquer besteira ai: <input type="text" id="frase" onkeyup="bobo()"><br>
+    <!------------------------------------------------------------------------>
+    <div>
+        a primeira letra é: <b id="p_letra"></b><br>
+        <!------------------------------------------------------------------------>
+        a última letra é: <b id="u_letra"></b><br>
+        <!------------------------------------------------------------------------>
+    </div>
+
+</body>
+
+</html>
+<script>
+    function bobo() {
+        var valor_frase = frase.value;
+
+        //o primeiro é sempre 0
+        p_letra.innerHTML = frase.value[0];
+        //o último é sempre o tamanho menos 1
+        u_letra.innerHTML = frase.value[frase.value.length - 1];
+    }
+</script>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>você pode ser piloto de corrida (altura até 1.65)</li>
+        <li>você pode ser jogador de futebol (altura + 1.65 até 1.80)</li>
+        <li>você pode ser jogador de volei ou de basquete (altura + 1.80</li>
+    </ul>
+    informe sua altura: <input type="text" id="altura" onkeyup="esporte()">
+    <div id="alt"></div>
+
+</body>
+</html>
+<script>
+    function esporte(){
+        var altura_valor = Number(altura.value)
+        var resultado;
+
+        if(altura_valor > 1.80){
+            resultado = "você pode ser jogador de volei ou de basquete"
+        }else if(altura_valor <=1.65){
+            resultado = "você pode ser piloto de corrida"
+        }else {
+            resultado = "você pode ser jogador de futebol"
+        }
+        alt.innerHTML = resultado;
+    }
+</script>

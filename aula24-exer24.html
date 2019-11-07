@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    informe a sua nota do ENEM: <input type="text" id="enem">
+    <!------------------------------------------------------>
+    informe sua nota da avaliação interna: <input type="text" id="interna">
+    <!------------------------------------------------------>
+    <button onclick="avalia()">avaliação</button>
+</body>
+
+</html>
+<script>
+    function avalia() {
+        var nota_enem = Number(enem.value);
+        var nota_inter = Number(interna.value);
+
+        if (nota_enem >= 800 || nota_inter >= 700) {
+            alert(`Parabéns! Aprovado`)
+        } else {
+            alert(`Tente semestre que vem!`);
+        }
+    }
+</script>

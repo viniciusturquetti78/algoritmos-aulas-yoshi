@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Temporizador</h2>
+
+    <h3>Temporizador um mantra...</h3>
+
+    <input type="text" id="teste">
+
+    <div id="div_mantra"></div>    
+</body>
+</html>
+<script>
+// código javascipt fora de função é executado IMEDIATAMENTE
+// seImterval: programa a REPETIÇÂO de um blobo de código
+// o intervalo é em ms (1 segundo por 1000)
+// ou seja: 2000 -> 2s; 500 -> meio segundo 
+
+//o setIntervalo funciona de forma ASSÍNCRONA
+setInterval(() => {
+    div_mantra.innerHTML += `mantra <br>`
+}, 2000);
+
+setInterval(() => {
+    div_mantra.innerHTML += `é nóis <br>`
+}, 1500);
+</script>

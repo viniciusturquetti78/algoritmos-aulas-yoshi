@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lista 5 - q04</title>
+</head>
+
+<body>
+    quantos que você tem economizado: <input type="text" id="salario">
+    <br>
+    <button onclick="poder()">Poder de compra</button>
+
+    <div id="div_mensagem" style="display:none">
+        <span id="resultado"></span>
+    </div>
+</body>
+
+</html>
+<script>
+    function poder() {
+        var valor_econo = Number(salario.value);
+        //------------------------------------------------->
+        if (valor_econo <= 0) {
+            resultado.innerHTML = `Nada de compras :(`
+                //div_mensagem.style.display = 'block';
+        }
+
+        //------------------------------------------------>
+        if (valor_econo > 0) {
+            resultado.innerHTML = `Viajem de ida e volta pra Praia Grande`
+        }
+
+        //-------------------------------------------------->
+        //  if (valor_econo = 100) {
+        //   resultado.innerHTML = `Uma boa moto usada`
+
+        //-------------------------------------------------->
+        if (valor_econo >= 4000) {
+            resultado.innerHTML = `Mais alguma bobagem legal`
+        }
+
+        div_mensagem.style.display = 'block';
+    }
+</script>

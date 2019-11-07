@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lista 5 - q02</title>
+</head>
+
+<body>
+    informe sua idade: <input type="text" id="idade">
+    <br>
+    <button onclick="festa()">ir para festa</button>
+</body>
+<!-----  
+    tabela de quais idade deve mostrar tal frase
+idade /// frases
+14 / permissão , s/chance
+15/ permissão , festa
+16/ permissão , festa
+18/cfesta
+19/ festa
+10/ permissão , s/chance
+-->
+
+</html>
+<script>
+    function festa() {
+        var idade_maior = Number(idade.value);
+
+        if (idade_maior < 18) {
+            alert(`pedir permissão para os pais`);
+        }
+
+        if (idade_maior < 15) {
+            alert(`sem chace! Vai estudar!`);
+        }
+        if (idade_maior >= 15) {
+            alert(`#partiuFesta`);
+        }
+    }
+</script>

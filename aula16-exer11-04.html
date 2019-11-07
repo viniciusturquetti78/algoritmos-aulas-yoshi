@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-----11. Crie um programa em HTML/JS no qual:
+a) Solicite o valor dos 2 catetos de um triângulo retângulo
+b) Calcule e exiba o valor da hipotenusa num alert
+OBS: Use os operadores de "atalhos matemáticos"
+-->
+
+    <input type="text" id="cateto1">
+    <input type="text" id="cateto2">
+
+    <button onclick="calcular()">calcular</button>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var cateto = Number(cateto1.value) ** 2;
+
+        alert(`${cateto}`);
+    }
+</script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<!----17. Crie um programa em HTML/JS o qual:
+a) Pergunte uma nota de um aluno
+b) Pergunte a frequência de um aluno
+c) Ao clicar em "Avaliar aluno"...
+d) Caso a nota for a partir de 5 e a frequência for a partir de 75, 
+exibir um alert com a frase "Parabéns! Aprovado!", caso contrário, exibir um alert com 
+"Infelizmente, não foi desta vez"-->
+
+<body>
+    informe sua nota: <input type="text" id="nota"><br>
+    <!--------------------------------------------------->
+    frequencia: <input type="text" id="frequencia"><br><br>
+    <!--------------------------------------------------->
+    <button onclick="aluno()">avaliar nota</button>
+</body>
+
+</html>
+<script>
+    function aluno() {
+        var valor_nota = Number(nota.value);
+        var freq = Number(frequencia.value);
+
+        if (valor_nota >= 5 && freq >= 75) {
+            alert(`Parabéns! Aprovado!`)
+        } else {
+            alert(`Infelizmente, não foi desta vez`)
+        }
+    }
+</script>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="aumentar()">aumentar</button><br>
+    <button onclick="diminuir()">diminuir</button><br>
+    <img src="allmilos.jpg" alt="" id="fotoricardo" style="height: 300px width: 200px"><br>
+    <div>
+        <span id="largura" </div>
+</body>
+
+</html>
+<script>
+    function aumentar() {
+        var valores
+        fotoricardo.style.height = `${valores++}px`;
+        fotoricardo.style.width = `${valores++}px`;
+
+    }
+    var valores = Number(500);
+
+    function diminuir() {
+        ///  var valores = Number(500);
+        fotoricardo.style.height = `${valores--}px`;
+        fotoricardo.style.width = `${valores--}px`;
+    }
+</script>

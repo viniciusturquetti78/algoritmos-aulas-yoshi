@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    informe sua idade: <input type="text" id="idade">
+    <!------------------------------------------------>
+    <button onclick="votar()">Votação</button>
+</body>
+
+</html>
+<script>
+    function votar() {
+        var valor_idade = Number(idade.value);
+
+        if (valor_idade < 18 || valor_idade > 65) {
+            alert(`seu voto é opcional`);
+        } else {
+            alert(`Você é obrigado(a) a votar`);
+        }
+    }
+</script>

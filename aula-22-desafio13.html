@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ricardo</title>
+</head>
+
+<body>
+    <div>
+        <img id="ric" src="ric.png" style="height: 300px; position:absolute; margin-top: 50px;">
+        <div id="vida" style="height: 30px; width: 300px; background-color: green; position:absolute; margin-top: 400px"></div>
+        <button style="margin-top: 450px" id="botao1" onclick="bater()">socar</button>
+        <!--------------------------------------------------------------------------------------->
+        <br>
+        <div id="div "></div>
+        <br>
+        <img id="thanos" src="thanos.png" style=" position: absolute; height: 300px; margin-left: 400px;">
+        <div id="barra" style="height: 30px; width: 300px; background-color: green; margin-left: 400px; margin-top:55px"></div>
+        <button style="margin-left: 400px;" id=" botao2 " onclick="socar() ">estalar</button>
+
+    </div>
+</body>
+
+</html>
+<script>
+    var luta = Number(300);
+    var fight = Number(300);
+
+    function bater() {
+        if (luta == 200) {
+            ric.src = 'ric-ver.jpg';
+        }
+        if (luta <= 0) {
+            /// ric.src = 'ric-vic.gif'
+            thanos.src = 'thanos-ven.gif'
+            div.innerHTML = '<div> thanos venceu !!!'
+            botao1.style.display = 'none';
+            botao2.style.display = 'none';
+            barra.style.display = 'none';
+
+        } else {
+            luta -= Number(50);
+            vida.style.width = `${luta}px`;
+        }
+
+    }
+
+    function socar() {
+        if (fight == 200) {
+            thanos.src = 'thanos-ine.jpg';
+        }
+        if (fight <= 0) {
+            thanos.src = 'thanos.gif'
+            ric.src = 'ric-vic.gif'
+            div.innerHTML = '<div> God ricardo venceu!!!'
+            botao1.style.display = 'none';
+            botao2.style.display = 'none';
+
+        } else {
+            fight -= Number(50);
+            barra.style.width = `${fight}px`;
+        }
+    }
+</script>

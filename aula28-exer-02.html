@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Classe E (até 250)</li>
+        <li>classe D (+250 até 900)</li>
+        <li>classe C (+900 até 2500)</li>
+        <li>classe B (+2500 até 9500)</li>
+        <li>classe A (+9500)</li>
+    </ul>
+    informe sua renda: <Input id="renda" onkeyup="dinheiro()">
+        <div id="div">
+        </div>
+</body>
+</html>
+<script>
+    function dinheiro(){
+        var valor_renda = Number(renda.value);
+
+        var resultado;
+
+        if(valor_renda > 9500){
+            resultado = "classe A";
+        }else if(valor_renda >2500 <=9500){
+            resultado = "classe B";
+        }else if(valor_renda > 900 <= 2500){
+            resultado = "classe C"
+        }else if (valor_renda >250 <=900){
+            resultado = "classe D"
+        }else {
+            resultado = "classe E"
+        }
+
+        div.innerHTML = resultado;
+    }
+</script>

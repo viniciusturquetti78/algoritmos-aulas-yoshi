@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<!----15. Crie um programa em HTML/JS o qual:
+a) Pergunte uma nota de um aluno
+b) Ao clicar em "Avaliar aluno"...
+c) Caso a nota for entre 0 e 10, exibir um alert com a frase "Nota válida!"
+d) Caso a nota não estiver no intervalo definido em c), exibir um alert com a frase "Onde já se viu nota menor que 0 e maior que 10?!"-->
+
+<body>
+
+    informe sua nota <input type="text" id="nota"><br><br>
+
+    <button onclick="aluno()">avaliar nota</button>
+
+</body>
+
+</html>
+<script>
+    function aluno() {
+        var valor_nota = Number(nota.value);
+
+        if (valor_nota >= 0 && valor_nota <= 10) {
+            alert(`Nota avaliada`);
+        } else {
+            alert(`Onde já se viu nota menor que 0 e maior que 10?!`);
+        }
+    }
+</script>

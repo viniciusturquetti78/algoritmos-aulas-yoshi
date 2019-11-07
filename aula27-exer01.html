@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- 1. Usando operador ternário, refaça a questão 1 da Lista 5. Use mensagens em uma div ao invés de alert.
+
+
+
+2. Solicite a média e a frequência de um aluno. Ao clicar num botão "Ver resultado", exiba, abaixo do botão, uma dessas frases:
+
+  Parabéns, aprovado(a)!
+  Tente outra vez ;)
+
+Para que o aluno esteja aprovado, sua média deve ser a partir de 5 e sua frequência a partir de 75.
+
+
+
+3. Usando operador ternário, refaça a questão 6 da Lista 5.
+
+
+
+4. Usando operador ternário, refaça a questão 8 da Lista 5. -->
+</head>
+<body>
+    qual é sua idade? <input type="text" id="idade">
+    <button onclick="festa()">ir para festa</button>
+
+    <div id="div_mensagem"></div>
+</body>
+</html>
+<script>
+    function festa(){
+        div_mensagem.innerHTML = ""
+        var idade_va = Number(idade.value);
+        var mensagem = idade_va > 18 ? "#partiuFesta" : idade_va < 15 ? "sem chance! vai estudar" : "pedir permissão para os pais";
+
+        div_mensagem.innerHTML = mensagem;
+    }
+</script>

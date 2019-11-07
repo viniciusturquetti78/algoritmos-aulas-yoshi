@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    qual foi sua média? <input type="text" id="media">
+    sua frequencia: <input type="text" id="frequencia">
+    <!-- ----------------------------------------- -->
+    <button onclick="media()">calcular media</button>
+
+    <div id="div_mensagem">
+
+    </div>
+</body>
+</html>
+<script>
+    function media(){
+        div_mensagem.innerHTML = ""
+
+        var media_n = Number(media.value);
+        var freq = Number(frequencia.value);
+        var mensagem = media_n >= 5 && freq >= 75 ? "Parabéns, aprovado(a)!" : " Tente outra vez ;)";
+        
+        div_mensagem.innerHTML = mensagem;
+    }
+</script>

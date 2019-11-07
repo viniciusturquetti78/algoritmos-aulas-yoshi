@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 3. Usando operador ternário, refaça a questão 6 da Lista 5.
+
+
+
+4. Usando operador ternário, refaça a questão 8 da Lista 5.
+
+
+
+5. Usando operador ternário, refaça uma questão da Lista 5 ou 6 que você escolher.
+
+
+6. Usando operador ternário, refaça a questão 2 da Lista 5.
+
+
+7. Usando operador ternário, refaça a questão 3 da Lista 5. Não precisa fazer a parte das cores diferentes por frase.
+
+
+8. Usando operador ternário, refaça a questão 10 da Lista 5. 
+
+
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Insira a quantidade de homens e mulheres no elevador: <br>
+    <input id="homens" autofocus> <input id="mulheres"> 
+    <button onclick="ligar()">Ligar elevador</button>
+    <div id="divi" ></div>
+</body>
+</html>
+
+<script>
+    function ligar () {
+        var peso = (Number(homens.value) * 90 ) + (Number(mulheres.value) * 70);
+
+        if (peso < 500){
+            divi.innerHTML = `<div style="color: green">Elevador vai se mover, pois está com ${peso}Kg</div>`;
+        } else {
+            divi.innerHTML = `<div style="color: red">Alguém precisa descer. Precisa perder ${(peso - 500).toFixed(2)}Kg para mover o elevador</div>`;
+        }
+    }
+</script>-->
+</head>
+<body>
+    quantos homens e mulheres há no elevador?<input type="text" id="homens">
+    <input type="text" id="mulheres">
+    <button onclick="elevador()">ligar elevador</button>
+
+    <div id="div"></div>
+    
+</body>
+</html>
+<script>
+    function elevador(){ 
+        var peso = (Number(homens.value)*90)+ (Number(mulheres.value)* 70);
+
+        
+        var mensagem = peso < 500 ? "Elevador vai se mover" : "Alguém precisa descer.";
+
+        div.innerHTML = mensagem;
+
+    }
+
+</script>

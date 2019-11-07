@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <select name="" id="comida">
+        <option value="carne bovina">carne bovina</option>
+        <option value="soja">soja</option>
+        <option value="carne suina">carne suina</option>
+        <option value="legumes">legumes</option>
+        <option value="carne de paixe">carne de peixe</option>
+        <option value="frutas">frutas</option>
+        <option value="ovos">ovos</option>
+    </select>
+    <button onclick="alimenta()">tipo de alimentação</button>
+    <div id="div_mensagem" style="display:none"></div>
+</body>
+
+</html>
+<script>
+    function alimenta() {
+        var ali = comida.value;
+
+        if (ali == "carne bovina" || ali == "carne suina" || ali == "carne de peixe" || ali == "ovo") {
+            div_mensagem.style.display = 'block';
+            div_mensagem.innerHTML = "Você não pode ser Vegano";
+
+            if (ali == "soja" || ali == "legumes" || ali == frutas)
+                div_mensagem.style.display = 'block';
+            div_mensagem.innerHTML = "Você pode ser Vegano";
+
+            if (ali == "soja" || ali == "legumes" || ali == frutas || ali == "ovos")
+                div_mensagem.style.display = 'block';
+            div_mensagem.innerHTML = "Você pode ser Vegetariano";
+        }
+    }
+</script>

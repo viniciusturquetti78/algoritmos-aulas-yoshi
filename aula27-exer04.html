@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- 4. Usando operador ternário, refaça a questão 8 da Lista 5.
+
+
+
+5. Usando operador ternário, refaça uma questão da Lista 5 ou 6 que você escolher.
+
+
+6. Usando operador ternário, refaça a questão 2 da Lista 5.
+
+
+7. Usando operador ternário, refaça a questão 3 da Lista 5. Não precisa fazer a parte das cores diferentes por frase.
+
+
+8. Usando operador ternário, refaça a questão 10 da Lista 5. 
+
+        8. Crie um programa em HTML/JS o qual:
+a) Solicite a quantidade de homens e mulheres num elevador
+
+b) Ao clicar num botão "Ligar elevador", calcule o peso total no elevador,
+ considerando que um homem pesa em média 90kg e uma mulher 70kg
+c) Caso o peso seja menor que 500, exiba uma frase na cor verde abaixo do 
+botão com a frase Elevador vai se mover, pois está com Xkg
+d) Caso o peso seja a partir de 500, exiba uma frase na cor vermelha abaixo 
+do botão com a frase Alguém precisa descer. Precisa perder Xkg para mover o elevador
+-->
+</head>
+<body>
+    quantidade de homens e mulheres:<br>
+    homens <Input id="homens"><br>
+        mulheres: <input type="text" id="mulheres">
+
+        <button onclick="ligar()">ligar elevador</button>
+
+        <div id="div"></div>
+</body>
+</html>
+<script>
+    function ligar(){
+        var ele = (Number(homens.value)*90) + (Number(mulheres.value)*70);
+
+        var mensagem = ele < 500 ? "o elevador vai subir" : "alguem precisa sair";
+
+        div.innerHTML = mensagem;
+
+    }
+</script>

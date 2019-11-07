@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--  Usando operador ternário: Solicite ao usuário seu salário. Ao clicar em "Analisar salário", 
+        deve aparecer, abaixo, uma figura de uma pessoa triste caso o salário for menor que 2500 ou de uma pessoa feliz, caso contrário.
+ -->
+</head>
+<body>
+    informe seu salário: <input type="text" name="" id="salario"><br>
+
+    <button onclick="sala()">analisar salário</button>
+<div id="div">
+    <img src="" alt="">
+</div>
+    
+</body>
+</html>
+<script>
+    function sala(){
+        var dindin = Number(salario.value);
+
+        var mensagem = dindin < 2500 ? `<img src="thanos.gif">` : dindin >= 2500 <=7000 ?  `<img src="neutro.png">`: dindin > 7000 ?  `<img src="cjfeliz.jpg">`:"";
+
+        div.innerHTML = mensagem;
+    }
+</script>

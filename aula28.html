@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>else if</title>
+</head>
+<body>
+    <h2>if-else-if</h2>
+
+    para o ser humano, a temperatura é:.... <ul>
+        <li>com frio (até 21°c)</li>
+        <li>confotável(mais de 21°c até 24°c</li>
+        <li>com calor (msid 24°c></li>
+    </ul>
+    Temperatura atual:
+    <input type="text" id="temperatura" onkeyup="clima()">
+    <div id="div_resultado"></div> 
+</body>
+</html>
+<script>
+    function clima(){
+        valor_temperatura = Number(temperatura.value)
+        var resultado;
+
+        if(valor_temperatura > 24){
+            resultado = "com calor";
+        }else if(valor_temperatura <= 21){
+            resultado = "com frio"
+        } else {
+            resultado = "confortável";
+        }
+
+        div_resultado.innerHTML = resultado;
+    }
+</script>

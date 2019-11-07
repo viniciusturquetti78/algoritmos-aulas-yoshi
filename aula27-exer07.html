@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<!-- 
+
+
+7. Usando operador ternário, refaça a questão 3 da Lista 5. Não precisa fazer a parte das cores diferentes por frase.
+
+
+8. Usando operador ternário, refaça a questão 10 da Lista 5. 
+
+      Qual o saldo da sua conta no banco: <input id="saldo"> 
+    <br>
+    
+    <button onclick="verificar()">Verificar finanças</button>
+    
+    <div id="divizinha" style="display: none">
+    <span id="frase" style="color: black"></span>
+    <span id="frase2" style="color: darkred; display: none"></span>
+    </div>
+
+</body>
+</html>
+
+<script>
+    function verificar() {
+        valor_saldo = Number(saldo.value);
+        
+        // primeira condição b.1)
+        if(valor_saldo == 0) {
+            frase.innerHTML = `Conta zerada`;
+            frase.style.color = 'black';
+            divizinha.style.display = 'block';
+            frase2.style.display = 'none';
+        }
+        
+        // segunda condição b.2)
+        if(valor_saldo < 0){
+            frase.innerHTML = `Está devendo!`;
+            frase.style.color = 'red';
+            divizinha.style.display = 'block';
+            frase2.style.display = 'none';
+            
+            if(valor_saldo < -1000){
+                frase2.innerHTML = `Igual ao Corinthians: No SERASA!`;
+                frase2.style.display = 'block';
+            }
+        }
+
+        // terceira condição b.3)
+        if(valor_saldo >0){
+            frase.innerHTML = `Saldo positivo! : R$${valor_saldo.toFixed(2)}`;
+            frase.style.color = 'blue';
+            divizinha.style.display = 'block';
+            frase2.style.display = 'none';
+        }
+    }
+</script>
+
+
+ -->
+</head>
+<body>
+        Qual o saldo da sua conta no banco: <input id="saldo"> 
+        <br>
+        
+        <button onclick="verificar()">Verificar finanças</button>
+        <div id="div"></div>
+    
+</body>
+</html>
+<script>
+    function verificar(){
+        var money = Number(saldo.value);
+
+        var mensagem = money ==0 ? "conta zerada" : money < 0 ? "está devendo" : money < -1000 ? "igual ao Corinthians: No SERASA!" : "saldo positivo";
+
+        div.innerHTML = mensagem;
+    }
+</script>

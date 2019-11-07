@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    qual sua meta de econimia: <input type="text" id="eco">
+    <br> quanto tem guardado: <input type="text" id="guardado">
+    <br>
+    <button onclick="economia()">analisar economia</button>
+
+    <div id="div_mensagem" style="display:none">
+        <span id="meta"></span>
+    </div>
+</body>
+
+</html>
+<script>
+    function economia() {
+        var valor_eco = (eco.value)
+        var valor_gua = (guardado.value)
+        if (valor_gua >= valor_eco) {
+            meta.innerHTML = `Parabéns, meta alcançada!`
+        }
+        if (valor_gua > valor_eco) {
+            meta.innerHTML = `Meta ultrapassada em ${valor_eco -= valor_gua}`
+        } else {
+
+        }
+
+        div_mensagem.style.display = 'block'
+    }
+</script>

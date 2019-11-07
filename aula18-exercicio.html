@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>aula 18</title>
+</head>
+
+<body>
+    seu salário: <input type="text" id="confirmar"><br><br>
+    <!-------------------------------------------------------->
+    <button onclick="conf()">confirmar seu salário</button>
+    <!-------------------------------------------------------->
+    <button onclick="conta100()">pagar conta 100</button>
+    <!-------------------------------------------------------->
+    <button onclick="conta500()">pagar conta 500</button>
+    <!-------------------------------------------------------->
+    <button onclick="ganhar2000()">ganhar 2000</button>
+    <!-------------------------------------------------------->
+
+    <div id="div_mensagem" style="display:none">
+        seu salário: <span id="span"></span>
+    </div>
+</body>
+
+</html>
+<script>
+    var salario = (confirmar.value);
+
+    function conf() {
+        span.innerHTML = confirmar.value
+
+        div_mensagem.style = 'block';
+    }
+
+    function conta100() {
+        salario -= 100;
+        span.innerHTML = salario;
+    }
+</script>
+<!-------------------------------------------
+    input
+
+    <button onclick="confirmar()">confirmar</button>
+<script>
+    function confirmar(){
+    var grana_atual = Number(salario.value);
+
+    alert(grana_atual);
+    }
+
+</script>
+
+-->
